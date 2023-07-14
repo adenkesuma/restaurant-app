@@ -8,7 +8,6 @@ const OrderHistory = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    console.log(order.history);
     setData(order.history);
   }, [order]);
 
@@ -22,30 +21,39 @@ const OrderHistory = () => {
       <div className="w-full px-8">
         {data.length !== 0 ? (
           data.map((item, i) => (
-            <div className="w-full my-[1rem] mx-0 flex flex-col" key={item.id}>
-              <div className="flex justify-between items-center">
-                <div className="">
-                  <p className="p__cormorant" style={{ color: "#DCCA87" }}>
-                    {item[i].title}
-                  </p>
+            <div
+              className="w-full my-[1rem] mx-0 flex flex-col border p-1 rounded-md"
+              key={i}
+            >
+              {item.data.map((itm) => (
+                <div key={itm.id}>
+                  <div className="flex justify-between items-center">
+                    <div className="">
+                      <p className="p__cormorant" style={{ color: "#DCCA87" }}>
+                        {itm.title}
+                      </p>
+                    </div>
+                    {/* <div className="mr-4 w-[90px] h-[1px] bg-[#DCCA87]" /> */}
+                    <p className="p__cormorant pl-2">~{itm.price}</p>
+                    <div className="flex flex-1 flex-row gap-1 justify-end items-center">
+                      <p className="p__cormorant text-center mx-2">
+                        {itm.count} plates
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                {/* <div className="mr-4 w-[90px] h-[1px] bg-[#DCCA87]" /> */}
-                <p className="p__cormorant pl-2">~{item[i].price}</p>
-                <div className="flex flex-1 flex-row gap-1 justify-end items-center">
-                  <p className="p__cormorant text-center mx-2">
-                    {item[i].count} plates
-                  </p>
-                </div>
-              </div>
+              ))}
 
               <div className="border-t py-4">
                 <div className="flex justify-between">
                   <p className="p__cormorant">Total</p>
-                  <p className="p__cormorant">{data[i].length} dishes, {data.plates} plates</p>
+                  <p className="p__cormorant">
+                    {item.data.length} dishes, {item.plates} plates
+                  </p>
                 </div>
                 <div className="flex justify-between">
                   <p className="p__cormorant">Total Payment</p>
-                  <p className="p__cormorant">${data[i].totalPayment}</p>
+                  <p className="p__cormorant">${item.totalPayment}</p>
                 </div>
               </div>
             </div>

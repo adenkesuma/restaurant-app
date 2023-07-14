@@ -132,7 +132,11 @@ const Cart = () => {
                     "order-history",
                     JSON.stringify([
                       ...parses,
-                      { ...data, totalPayment: totalPayment, plates: plates },
+                      {
+                        data: data,
+                        totalPayment: totalPayment,
+                        plates: plates,
+                      },
                     ])
                   );
                   localStorage.removeItem("cart");
