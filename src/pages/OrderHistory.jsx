@@ -19,7 +19,7 @@ const OrderHistory = () => {
       </div>
 
       <div className="w-full px-8">
-        {data.length !== 0 ? (
+        {data.length > 0 ? (
           data.map((item, i) => (
             <div
               className="w-full my-[1rem] mx-0 flex flex-col border p-1 rounded-md"
