@@ -9,13 +9,13 @@ const Newsletter = () => (
         </div>
         <div className="flex justify-center flex-row gap-3 mt-[3rem] mx-auto ">
             <input 
-                className='w-[400px] rounded-xl text-[1rem] outline-none border-none px-3'
+                className='w-[400px] rounded-sm text-[1rem] outline-none border-none px-3'
                 type="email" 
                 placeholder="Enter your email address" 
                 />
             <button 
                 type="button"
-                className="p-3 bg-[#DCCA87] rounded-xl"
+                className="p-3 bg-[#DCCA87] rounded-sm hover:bg-[#948241]"
             >
                 Subscribe
             </button>

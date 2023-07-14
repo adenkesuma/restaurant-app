@@ -2,6 +2,7 @@ import React from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../constants/images'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false)
@@ -12,12 +13,21 @@ const Navbar = () => {
         <img src={images.gericht} alt="w-full" />
       </div>
       <ul className="flex flex-1 justify-center gap-[2rem] items-center list-none">
-        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400"><a href="#home">Home</a></li>
-        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400"><a href="#about">About</a></li>
-        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400"><a href="#menu">Menu</a></li>
-        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400"><a href="#awards">Awards</a></li>
-        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400"><a href="#contact">Contact</a></li>
-        <a href="/" className="text-[#ffffff] hover:text-gray-400">Book Table</a>
+        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400">
+          <a href="#home">Home</a>
+        </li>
+        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400">
+          <a href="#about">About</a>
+        </li>
+        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400">
+          <Link to="/menu">Menu</Link>
+        </li>
+        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400">
+          <a href="#awards">Awards</a>
+        </li>
+        <li className="cursor-pointer text-[#ffffff] hover:text-gray-400">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
       <div className="flex justify-end items-center">
         <a href="#login" className="text-[#ffffff] hover:text-gray-400">Log In / Registration</a>
