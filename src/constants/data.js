@@ -60,22 +60,22 @@ const awards = [
   {
     imgUrl: images.award02,
     title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'Bib Gourmand is a prestigious award given to restaurants that offer exceptional quality food at affordable prices',
   },
   {
     imgUrl: images.award01,
     title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'The Rising Star award acknowledges the remarkable talent and potential of emerging chefs in the culinary industry',
   },
   {
     imgUrl: images.award05,
     title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'The AA Hospitality award is a highly respected recognition given to hotels, restaurants, and other hospitality ',
   },
   {
     imgUrl: images.award03,
     title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'The Outstanding Chef award is a prestigious honor bestowed upon culinary masters who have made a significant impact on the gastronomic world.',
   },
 ];
 

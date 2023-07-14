@@ -6,6 +6,7 @@ import Header from "./Header"
 import Intro from "./Intro"
 import Laurels from "./Laurels"
 import SpecialMenu from "./SpecialMenu"
+import Newsletter from "../components/Newsletter"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Laurels />
       <Gallery />
       <FindUs />
+      <Newsletter />
     </div>
   )
 }

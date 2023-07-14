@@ -1,10 +1,8 @@
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
-import Newsletter from '../components/Newsletter';
 import { images } from '../constants';
 
 const Footer = () => (
     <div className="w-full px-[2rem] py-[2rem] relative z-10 flex justify-start items-center flex-col bg-[#1a1a1a]" id="login">
-        <Newsletter />
 
         <div className="mt-4 border-t pt-8 w-full flex justify-between items-start">
             <div>

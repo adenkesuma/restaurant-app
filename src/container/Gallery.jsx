@@ -18,11 +18,11 @@ const Gallery = () => {
 
     return (
         <div className="flex-row bg-[#1a1a1a] pt-[4rem] pr-0 pb-[4rem] pl-[6rem] flex__center">
-            <div className="flex-1 flex justify-center items-start flex-col min-w-[500px] pr-[2rem]">
+            <div className="flex-1 flex justify-center gap-3 items-start flex-col min-w-[500px] pr-[2rem]">
                 <Subheading title="Instagram" spoon={"mx-0"} />
                 <h1 className="headtext__cormorant">Photo Gallery</h1>
-                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
+                <p className="p__opensans" style={{ color: '#AAAAAA' }}>
+                   In our photo gallery, you will find a captivating collection of visually stunning images that showcase the beauty, ambiance, and delectable offerings of our establishment. Each photograph tells a story, capturing the essence of our restaurants exquisite dishes, elegant interior design, and the joyous moments shared by our guests. 
                 </p>
                 <button 
                     type="button" 
