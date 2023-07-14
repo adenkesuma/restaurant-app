@@ -140,6 +140,7 @@ const Cart = () => {
                     ])
                   );
                   localStorage.removeItem("cart");
+                  cart.setItem([]);
                   navigate("/order-history");
                 }}
               >
