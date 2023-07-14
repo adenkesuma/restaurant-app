@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../constants/images'
 import { Link } from 'react-router-dom'
+import { LuShoppingCart } from "react-icons/lu"
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false)
@@ -30,7 +31,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="flex justify-end items-center">
-        <a href="#login" className="text-[#ffffff] hover:text-gray-400">Log In / Registration</a>
+        <Link to="/cart">
+          <LuShoppingCart className='text-[24px] text-[#ffffff]' />
+        </Link>
       </div>
       <div className="block lg:hidden">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />

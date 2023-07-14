@@ -1,6 +1,7 @@
 import About from "./About"
 import Chef from "./Chef"
 import Header from "./Header"
+import Intro from "./Intro"
 import SpecialMenu from "./SpecialMenu"
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <About />
       <SpecialMenu />
       <Chef />
+      <Intro />
     </div>
   )
 }
