@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import Subheading from '../components/Subheading';
 import { images } from '../constants';
 
 const Header = () => (
@@ -6,23 +8,20 @@ const Header = () => (
         id="home"
     >
         <div className="app__wrapper_info">
-            <div>
-                <p className="p__cormorant">Chase the new flavour</p>
-                <img src={images.spoon} alt="spoon_image" />
-            </div>
+            <Subheading title={"Chase the new flavour"} spoon={"mx-0"} />
             <h1 className="app__header-h1">The Key To Fine Dining</h1>
             <p 
                 className="p__opensans" 
                 style={{ margin: '2rem 0' }}
             >
-                Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus 
+                At Gericht, exceptional service is our hallmark. Our highly trained staff anticipates your every need, providing attentive and personalized service throughout your dining experience 
             </p>
-            <button 
-                type="button" 
+            <Link
+                to="/menu"
                 className="p-3 bg-[#DCCA87] rounded-sm hover:bg-[#948241]"
             >
                 Explore Menu
-            </button>
+            </Link>
         </div>
 
         <div className="app__wrapper_img">

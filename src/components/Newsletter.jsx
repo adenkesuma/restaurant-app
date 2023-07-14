@@ -3,7 +3,7 @@ import Subheading from './Subheading'
 const Newsletter = () => (
     <div className="py-[2rem] px-[4rem] bg-[#1a1a1a]">
         <div className="text-center">
-            <Subheading title="Newsletter" />
+            <Subheading title="Newsletter" spoon={"mx-auto"} />
             <h1 className="headtext__cormorant">Subscribe To Our Newsletter</h1>
             <p className="p__opensans">And never miss latest Updates!</p>
         </div>

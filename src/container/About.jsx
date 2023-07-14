@@ -18,7 +18,9 @@ const About = () => (
                     alt="about_spoon" 
                     className="spoon__img" 
                 />
-                <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+                <p className="p__opensans">
+                    Gericht is a culinary platform dedicated to satisfying your gastronomic cravings. We are the perfect destination for food enthusiasts seeking a unique and unforgettable dining experience.
+                </p>
                <button 
                     type="button" 
                     className="p-3 bg-[#DCCA87] rounded-sm hover:bg-[#948241]"
@@ -43,7 +45,7 @@ const About = () => (
                     className="spoon__img" 
                 />
                 <p className="p__opensans">
-                    Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.
+                    Gericht has a rich and vibrant history that spans over several years, showcasing our commitment to culinary excellence and innovation. From our humble beginnings to becoming a renowned culinary destination, here is a glimpse into our journey.
                 </p>
                 <button 
                     type="button" 
